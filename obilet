@@ -1,0 +1,17 @@
+int yas,km;
+      double kmb=0.10,tutar;
+      Scanner info =new Scanner(System.in);
+      System.out.println("Kaç Km Yol Gideceksiniz: ");
+      km= info.nextInt();
+      System.out.println("Kaç Yaşındasınız: ");
+      yas= info.nextInt();
+      if (yas<=12){
+            tutar=(km*kmb)/2;
+          System.out.println("TOPLAM TUTAR: "+tutar);
+      } else if (yas>12&&yas<21) {
+          tutar=(km*kmb)*90/100;
+          System.out.println("TOPLAM TUTAR: "+tutar);
+      } else if (yas>=65) {
+          tutar=(km*kmb)*70/100;
+          System.out.println("TOPLAM TUTAR: "+tutar);
+      }
